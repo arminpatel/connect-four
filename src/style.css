@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
 body {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.start-cont {
     background-color: #5c2dd5;
     height: 100vh;
     margin: 0px;
-    padding: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,4 +75,64 @@ body {
 
 .rules {
     background-color: white;
+}
+
+.rules a {
+    color: black;
+}
+
+.rules-parent {
+    background-color: #5c2dd5;
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rules-cont {
+    background-color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
+    width: 30vw;
+    border-radius: 30px;
+    border: 3px solid black;
+    box-shadow: 0px 10px black;
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+}
+
+.rules-cont .head {
+    font-size: 50px;
+    text-align: center;
+}
+
+.rules-cont p{
+    opacity: 0.6;
+}
+
+.section-head {
+    padding: 0;
+    color: #7945FF;
+}
+
+.rules-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.list-item span {
+    opacity: 0.6;
+}
+
+.check-img {
+    transform: translate(0, -50%);
 }
