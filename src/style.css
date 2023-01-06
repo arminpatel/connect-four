@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
+body {
+    background-color: #5c2dd5;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
+    background-color: #7945FF;
+    height: 60vh;
+    width: 30vw;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    border: 3px solid black;
+    box-shadow: 0px 10px black;
+}
+
+.menu-btn {
+    padding: 12px;
+    border: 3px solid black;
+    border-radius: 20px;
+    width: 80%;
+    margin: 10px;
+    box-shadow: 0 10px black;
+    transition: ease 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-btn:hover {
+    box-shadow: 0 10px #5c2dd5;
+    cursor: pointer;
+}
+
+.logo {
+    flex-grow: 1;
+    width: 100%;
+    position: relative;
+}
+
+.logo img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.player-vs-cpu {
+    background-color: #FD6687;
+    color: white;
+}
+
+.player-vs-player {
+    background-color: #FFCE67;
+}
+
+.rules {
+    background-color: white;
+}
