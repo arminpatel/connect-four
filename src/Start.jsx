@@ -11,12 +11,16 @@ const Start = () => {
                     <img src={ logo } />
                 </div>
                 <div className="menu-btn player-vs-cpu">
-                    PLAYER VS CPU
-                    <img src={ PvCIcon } />
+                    <Link to='/game'>
+                        PLAYER VS CPU
+                        <img src={ PvCIcon } />
+                    </Link>
                 </div>
                 <div className="menu-btn player-vs-player"> 
-                    PLAYER VS PLAYER
-                    <img src={ PvPIcon } />
+                    <Link to='/game'>
+                        PLAYER VS PLAYER
+                        <img src={ PvPIcon } />
+                    </Link>
                 </div>
                 <div className="menu-btn rules"> 
                     <Link to='/rules' >

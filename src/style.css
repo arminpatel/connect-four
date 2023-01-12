@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
 body {
     margin: 0px;
+    padding: 0;
 }
 
 a {
@@ -40,6 +41,9 @@ a {
     margin: 10px;
     box-shadow: 0 10px black;
     transition: ease 0.4s;
+}
+
+.menu-btn a {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,8 +81,9 @@ a {
     background-color: white;
 }
 
-.rules a {
+.menu-btn a {
     color: black;
+    width: 100%;
 }
 
 .rules-parent {
@@ -134,5 +139,88 @@ a {
 }
 
 .check-img {
+    transform: translate(0, -50%);
+}
+
+/* Game CSS */
+
+.game-container {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
+    background-color: #7945FF;
+    width: 100vw;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.head {
+    width: 40vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-btn {
+    border-radius: 20px;
+    background-color: #5c2dd5;
+    height: 40px;
+    padding: 0px 20px;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.board-players {
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.player-1, .player-2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.board {
+    height: 632px;
+}
+
+.img-board-white {
+    transform: translate(0, -102.5%);
+}
+
+.score-card {
+    width: 8rem;
+    height: 10rem;
+    background-color: white;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 20px;
+    box-shadow: 0px 10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-1-score, .player-2-score {
+    font-size: 56px;
+}
+
+.score-card h3 {
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.player-icon {
+    height: 54px;
+    width: 59px;
     transform: translate(0, -50%);
 }
